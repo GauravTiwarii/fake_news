@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class = "container query-text-form">
+    <form id = "query_form" action = "/query" method = "post">
+        <div class = "form-group" >
+        <label for = "query_text">Query</label>
+        <input class = "form-control" type = "text" id = "query_text" name = "query_text">
+        </div>
+
+        <button class = "btn btn-success" type = "submit" >Submit</button>
+
+    </form>
+
+</div>
+
+{% endblock %}

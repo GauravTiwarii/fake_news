@@ -1,0 +1,19 @@
+{% extends base.html %}
+{% block content %}
+    <h2>{{query_text}}</h2>
+    <!--<h2>{{content[0]}}</h2>-->
+    <!--<h2>{{content[1]}}</h2>-->
+    <!--<h2>{{content[2]}}</h2>-->
+    <!--<h2>{{content[3]}}</h2>-->
+    <!--<h2>{{content[4]}}</h2>-->
+    <!--<h2>{{content[5]}}</h2>-->
+    <!--<h2>{{content[6]}}</h2>-->
+
+    {% for content in contents %}
+
+        <h3>{{content}}</h3>
+        <hr>
+
+    {% endfor %}
+
+{% endblock %}
